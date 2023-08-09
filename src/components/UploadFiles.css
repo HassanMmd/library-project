@@ -1,0 +1,88 @@
+.upolad-page{
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    height: 800px;
+    gap: 1rem;
+}
+
+.upolad-page-mobile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.label{
+    color: white;
+    font-weight: bold;
+}
+
+form{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 1rem;
+}
+
+.login-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-label{
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.login{
+    margin-top: 50px;
+    padding: 20px;
+    border: 1px solid white;
+    border-radius: 5%;
+}
+
+.login-title{
+    display: flex;
+    justify-content: start;
+    color: rgb(206, 229, 206);
+    padding-bottom: 10px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.form-container{
+    margin-top: 50px;
+    padding: 20px;
+    border: 1px solid white;
+    border-radius: 2%;
+    width: 850px;
+}
+
+.form-container-mobile{
+    margin-top: 50px;
+    padding: 20px;
+    border: 1px solid white;
+    border-radius: 2%;
+    width: 100%;
+}
+
+.form-upload-mobile{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.message{
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.upload-message{
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(172, 224, 172);
+}
