@@ -20,7 +20,7 @@ function Scince() {
     const isPortrait = useMediaQuery({ query: '(orientation: portrait)' })
     const isRetina = useMediaQuery({ query: '(min-resolution: 2dppx)' })
     return (
-        <section id="scinceHub" className="scinceHub">
+        <section id="scince" className="scince">
             {isDesktopOrLaptop && <div className="hub">
                 <h5>Download Docs From Science Hub:</h5>
                 <div className="container-hub">
