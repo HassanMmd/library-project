@@ -2,11 +2,11 @@ import React from "react";
 import { useState } from "react";
 import { useMediaQuery } from 'react-responsive';
 
-function Scince() {
+function ScinceHub() {
     const [scinceWebsite, setScinceWebsite] = useState(`url/../..`);
     const [bookLink, setBookLink] = useState(`url/../...`);
-    let scinceBookLink = `https://${scinceWebsite}/${bookLink}`;
-    const handleScinceChange = (e) => {
+    let scinceHubBookLink = `https://${scinceWebsite}/${bookLink}`;
+    const handleScinceHubChange = (e) => {
         setScinceWebsite(e.target.value);
     };
     const handleBookLinkChange = (e) => {
@@ -20,14 +20,14 @@ function Scince() {
     const isPortrait = useMediaQuery({ query: '(orientation: portrait)' })
     const isRetina = useMediaQuery({ query: '(min-resolution: 2dppx)' })
     return (
-        <section id="scince" className="scince">
+        <section id="scinceHub" className="scinceHub">
             {isDesktopOrLaptop && <div className="hub">
                 <h5>Download Docs From Science Hub:</h5>
                 <div className="container-hub">
                     <div className="form-hub">
                         <input type="text" id="link" className="form-control link-input" onChange={handleBookLinkChange} placeholder="Past link"></input>
-                        <a type="submit" className="btn btn-warning btn-doc" href={scinceBookLink}>Open Doc</a>
-                        <input type="text" id="link1" className="form-control" onChange={handleScinceChange} placeholder="Scince website"></input>
+                        <a type="submit" className="btn btn-warning btn-doc" href={scinceHubBookLink}>Open Doc</a>
+                        <input type="text" id="link1" className="form-control" onChange={handleScinceHubChange} placeholder="ScinceHub website"></input>
                     </div>
                 </div>
             </div>}
@@ -36,8 +36,8 @@ function Scince() {
                 <div className="container-hub-mobile">
                     <div className="form-hub-mobile">
                         <input type="text" id="link" className="form-control" onChange={handleBookLinkChange} placeholder="Past link"></input>
-                        <a type="submit" className="btn btn-warning btn-doc" href={scinceBookLink} target={"_blank"}>Open Doc</a>
-                        <input type="text" id="link1" className="form-control" onChange={handleScinceChange} placeholder="Scince website"></input>
+                        <a type="submit" className="btn btn-warning btn-doc" href={scinceHubBookLink} target={"_blank"}>Open Doc</a>
+                        <input type="text" id="link1" className="form-control" onChange={handleScinceHubChange} placeholder="ScinceHub website"></input>
                     </div>
                 </div>
             </div>}
@@ -45,4 +45,4 @@ function Scince() {
     );
 }
 
-export default Scince;
+export default ScinceHub;
