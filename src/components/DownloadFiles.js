@@ -22,8 +22,8 @@ function DownloadFiles() {
         await fetch("url/getBooks",
             {
                 headers: {
-                    "Content-Type": "text/html",
-                    "charset": "utf-8"
+                    "Content-Type": "----",
+                    "charset": "----"
                 },
             }
         )
