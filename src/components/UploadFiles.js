@@ -27,11 +27,11 @@ function UploadFiles() {
 
     const getLoginFetchData = async (event) => {
         event.preventDefault();
-        await fetch(`url/getusers?name=${name}&userpassword=${userpassword}`,
+        await fetch(`url/user?name=${name}&userpassword=${userpassword}`,
             {
                 headers: {
-                    "Content-Type": "text/html",
-                    "charset": "utf-8"
+                    "Content-Type": "------",
+                    "charset": "------"
                 },
             }
         )
@@ -77,8 +77,8 @@ function UploadFiles() {
         formData.append('regcode', regcode);
         const config = {
             headers: {
-                "Content-Type": "text/html",
-                "charset": "utf-8"
+                "Content-Type": "------",
+                "charset": "------"
             },
         };
         axios.post(url, formData, config).then(response => {
