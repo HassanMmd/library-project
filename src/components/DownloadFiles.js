@@ -49,11 +49,11 @@ function DownloadFiles() {
     };
     const getSearchFetchData = async (event) => {
         event.preventDefault();
-        await fetch(`url/getBooks?text=${text}&catId=${catId}`,
+        await fetch(`url/getBook?text=${text}&catId=${catId}`,
             {
                 headers: {
-                    "Content-Type": "text/html",
-                    "charset": "utf-8"
+                    "Content-Type": "------",
+                    "charset": "------"
                 },
             }
         )
