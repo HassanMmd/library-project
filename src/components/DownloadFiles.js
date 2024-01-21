@@ -81,8 +81,8 @@ function DownloadFiles() {
         await fetch(`url/docnum?library=${library}`,
             {
                 headers: {
-                    "Content-Type": "text/html",
-                    "charset": "utf-8"
+                    "Content-Type": "------",
+                    "charset": "------"
                 },
             }
         )
